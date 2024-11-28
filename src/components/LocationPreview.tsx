@@ -40,10 +40,6 @@ export const LocationPreview: React.FC<LocationPreviewProps> = ({ location }) =>
           </span>
           {renderRating(location.rating)}
         </div>
-        <p className="text-xs text-gray-600 mt-2 line-clamp-2">{location.description}</p>
-        <div className="text-xs text-center mt-2 text-indigo-600 font-medium">
-          Click marker for more details
-        </div>
       </div>
     </div>
   );

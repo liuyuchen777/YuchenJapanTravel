@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Header } from './components/Header';
 import { LocationCard } from './components/LocationCard';
 import { Map } from './components/Map';
@@ -9,9 +9,9 @@ function App() {
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Header locations={locations} />
-      <main className="container mx-auto px-4 py-6">
+      <main className="container mx-auto px-4 py-6 flex-grow">
         <div className="mb-8">
           <Map locations={locations} onLocationSelect={setSelectedLocation} />
         </div>
